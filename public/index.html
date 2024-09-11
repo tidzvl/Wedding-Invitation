@@ -1,0 +1,2818 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/housttely-signature');
+    </style>
+
+    <style>
+        @font-face {
+            font-family: "Housttely Signaturet";
+            src: url('./fonts/SVN-Housttely Signature.otf') format('opentype');
+            font-weight: 400;
+            font-display: swap;
+        }
+    </style>
+    <style>
+        .custom-alert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-radius: 15px;
+        }
+        .custom-alert h2 {
+            font-family: Tahoma, Arial, sans-serif;
+            font-size: medium;
+            color: #333;
+            margin-top: 0;
+        }
+        .custom-alert button {
+            margin-top: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300;400&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300;400&amp;display=swap"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/housttely-signature" rel="stylesheet">
+    <link rel="stylesheet" href="/css/namtay.css" />
+    <style data-cke-temp="1">
+        .cke_editable {
+            cursor: text;
+        }
+
+        .cke_editable img,
+        .cke_editable input,
+        .cke_editable textarea {
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <iframe src="./music3.mp3" allow="autoplay" allowfullscreen="allowfullscreen" id="audio"
+        style="display: none"></iframe>
+    <audio id="player" autoplay loop>
+        <source src="./music3.mp3" type="audio/mp3">
+    </audio>
+    <!-- <audio id="audio" src="./music.mp3"></audio> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        [data-gjs-type="wrapper"] {
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        [data-gjs-type="wrapper"] {
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        * ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        * ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        * ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .gjs-dashed *[data-highlightable] {
+            outline: 1px dashed rgba(170, 170, 170, 0.7);
+            outline-offset: -2px;
+        }
+
+        .gjs-selected {
+            outline: 3px solid #3b97e3 !important;
+            outline-offset: -3px;
+        }
+
+        .gjs-selected-parent {
+            outline: 2px solid #ffca6f !important;
+        }
+
+        .gjs-no-select {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        .gjs-freezed {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .gjs-no-pointer {
+            pointer-events: none;
+        }
+
+        .gjs-plh-image {
+            background: #f5f5f5;
+            border: none;
+            height: 100px;
+            width: 100px;
+            display: block;
+            outline: 3px solid #ffca6f;
+            cursor: pointer;
+            outline-offset: -2px;
+        }
+
+        .gjs-grabbing {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+        }
+
+        .gjs-is__grabbing {
+            overflow-x: hidden;
+        }
+
+        .gjs-is__grabbing,
+        .gjs-is__grabbing * {
+            cursor: grabbing !important;
+        }
+
+        * {
+            -webkit-user-drag: none;
+        }
+
+        .gjs-selected {
+            outline: 2px solid #313990 !important;
+            outline-offset: 0.2px !important;
+        }
+
+        body p {
+            margin-bottom: 0 !important;
+        }
+
+        body a {
+            color: #000;
+        }
+
+        @font-face {
+            font-family: "Housttely Signature";
+            src: url('./fonts/SVN-Housttely Signature.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+    <div data-gjs-type="wrapper" data-highlightable="1" titlefontid="56" paragraphfontid="57" id="iwq5"
+        draggable="true">
+        <link data-gjs-type="text" draggable="true" data-highlightable="1" rel="stylesheet" href="/css/namtay.css"
+            id="i3l3" />
+        <link data-gjs-type="text" draggable="true" data-highlightable="1" rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" id="ibb5" />
+        <link data-gjs-type="text" draggable="true" data-highlightable="1"
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" id="i96g" />
+        <section data-gjs-type="widget" data-highlightable="1" data-widget="header" data-fixed="true"
+            data-background-updatable="true"
+            data-background-image="https://image.namtay.vn/fit/2000/images/wedsite/q9BSZAdkHG_tmp.png"
+            data-max-width="2000" id="iexc" class="t21-banner min-h-screen grid place-center text-center">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                class="greeting color-1 font-para line-height-normal animate__animated animate__fadeInUp animate__slow"
+                id="i8ii"></div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                class="heading color-1 font-para line-height-normal animate__animated animate__fadeInUp animate__slow"
+                id="i7e4"></div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1"
+                class="t21-scroll-down animate__animated animate__fadeInUp animate__slow" id="i8s3">
+                <h2 data-gjs-type="text" draggable="true" data-highlightable="1" class="t21-h2 t21-animate-bounce"
+                    id="ifxy">
+                    <a data-gjs-type="link" data-highlightable="1" href="#t21-background"
+                        class="t21-scroll-link color-1" id="iasr"><img data-gjs-type="image"
+                            src="https://image.namtay.vn/fit/300/images/wedsite/DNhbn7HtDk_Arrow-1.png" alt=""
+                            id="iczad" /></a>
+                </h2>
+            </div>
+        </section>
+        <section data-gjs-type="widget" data-highlightable="1" id="t21-background" data-widget="introduce"
+            class="t21-introduce grid bg-texture text-center">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" id="iog2h">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-easing="linear" data-editable="true"
+                    class="name font-heading aos-init aos-animate" id="ikxuf">
+                    <p>Anh Thư</p>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1"
+                    class="ampersand font-para line-height-normal" id="i0b8r">
+                    &amp;
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-easing="linear" data-editable="true"
+                    class="name font-heading aos-init aos-animate" id="ia7ie">
+                    <p>Phạm Sỹ</p>
+                </div>
+            </div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                data-aos-duration="1600" data-aos-easing="linear" data-editable="true"
+                class="day font-para line-height-normal aos-init aos-animate" id="il1jr">
+                <p>18.10.2024</p>
+            </div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                data-aos-duration="2200" data-aos-easing="linear" data-editable="true"
+                class="disc font-para line-height-normal mx-auto relative aos-init aos-animate" id="ikfq5">
+                <p>
+                    Muốn cùng anh sánh bước đến khi hoàng hôn buông xuống, muốn cùng anh khiêu vũ đến khi bình minh ló rạng, muốn cùng anh trãi qua từng ngày của cuộc đời.
+                </p>
+            </div>
+        </section>
+        <section data-gjs-type="widget" data-highlightable="1" data-widget="location" data-background-updatable="true"
+            data-background-image="https://image.namtay.vn/fit/2000/images/wedsite/9UwMDA9aVK_tmp.png"
+            data-max-width="2000" id="ia3lh" class="t21-location">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" class="flex" id="ij2kf">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-right"
+                    data-aos-duration="1400" data-aos-easing="linear"
+                    class="location-time color-1 text-center aos-init aos-animate" id="i2t16">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours font-para line-height-normal" id="i2q1u">
+                        <p><strong>Thứ 6</strong></p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="month font-para line-height-normal" id="i7ffu">
+                        <p>18.10.2024</p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours font-para line-height-normal" id="i621j">
+                        <p><strong>Vào lúc 16:30</strong></p>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-left"
+                    data-aos-duration="1400" data-aos-easing="linear"
+                    class="location-address color-1 text-center aos-init aos-animate" id="ilkpb">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours font-para line-height-normal" id="ia6ph">
+                        <p><strong>Địa điểm</strong></p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="address font-para line-height-normal" id="i19bf">
+                        <p>&nbsp;Tư Gia</p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours font-para line-height-normal" id="ikihq">
+                        <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Số 158 Lạc Long Quân</strong></p>
+                        <p><strong>Tiến Thành</strong></p>
+                        <p><strong>Phan Thiết</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-gjs-type="widget" data-highlightable="1" data-widget="events" class="t21-events bg-texture"
+            id="ic536">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                class="title font-heading text-center" id="iwk5i">
+                Sự kiện
+            </div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1"
+                class="events-wrapper relative grid items-center mx-auto" id="i7zx3">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-left"
+                    data-aos-duration="900" data-aos-easing="linear"
+                    class="event-point grid text-center aos-init aos-animate" id="ifw51">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours-box font-para line-height-normal" id="ik0nt">
+                        <p>16:30 PM</p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="content-box font-para line-height-normal" id="izdk6">
+                        <p>Đón khách</p>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-left"
+                    data-aos-duration="1600" data-aos-easing="linear"
+                    class="event-point grid text-center aos-init aos-animate" id="ih5d8">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours-box font-para line-height-normal" id="i48bd">
+                        <p>17:30 PM</p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="content-box font-para line-height-normal" id="iycoc">
+                        <p>Tổ chức lễ</p>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-left"
+                    data-aos-duration="2200" data-aos-easing="linear"
+                    class="event-point grid text-center aos-init aos-animate" id="ir9qi">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="hours-box font-para line-height-normal" id="i1q42">
+                        <p>18:30 PM</p>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="content-box font-para line-height-normal" id="id45a">
+                        <p>Khai tiệc</p>
+                    </div>
+                </div>
+            </div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                data-aos-duration="2200" data-aos-easing="linear" data-editable="true"
+                class="disc font-para line-height-normal mx-auto relative aos-init aos-animate" id="iyvce">
+                <p>Còn điều gì tốt đẹp hơn việc có nhau trên thế giới này</p>
+            </div>
+        </section>
+        <section data-gjs-type="widget" data-highlightable="1" data-widget="biography" class="t21-bio bg-texture"
+            id="ityv8">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" class="bio-container" id="iykp1">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="upper-part" id="ix8ju">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" class="main-content flex"
+                        id="im6zh">
+                        <div data-gjs-type="text" draggable="true" data-highlightable="1" class="img-box" id="id9oh">
+                            <img data-gjs-type="image"
+                                src="https://image.namtay.vn/fit/800/images/wedsite/1ERYD6mlXX_tmp.png" alt=""
+                                data-editable="true" data-aos="fade-left" data-aos-duration="1500"
+                                data-aos-easing="linear" data-max-width="800" class="block aos-init aos-animate"
+                                id="i2vuh" />
+                        </div>
+                        <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                            data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear"
+                            class="content-box aos-init aos-animate" id="ibbhn">
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                                class="bio-title color-2 font-para line-height-normal" id="iw5ze">
+                                <p data-gjs-type="text" draggable="true" data-highlightable="1" id="iio0g">
+                                    Cô Dâu
+                                </p>
+                            </div>
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                                class="bio-name color-2 font-para line-height-normal" id="imx3e">
+                                <p>Anh Thư</p>
+                            </div>
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                                class="bio-content color-2 font-para line-height-normal" id="i5692">
+                                <p>
+                                    "Sẽ thật vui nếu em là động lực để anh cố gắng mỗi ngày. Nhưng em sẽ hạnh phúc hơn nếu em cũng là điểm tựa để anh dựa vào mỗi khi mệt mỏi."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="lower-part" id="iyk1j">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" class="main-content flex"
+                        id="iyeqp">
+                        <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                            data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear"
+                            class="content-box aos-init aos-animate" id="ilj9o">
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                                class="bio-title color-2 font-para line-height-normal" id="i7n0w">
+                                <p>Chú Rể</p>
+                            </div>
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                                class="bio-name color-2 font-para line-height-normal" id="i47oz">
+                                <p>Phạm Sỹ</p>
+                            </div>
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                                class="bio-content color-2 font-para line-height-normal" id="i9jta">
+                                <p>"..."</p>
+                            </div>
+                        </div>
+                        <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-right"
+                            data-aos-duration="1500" data-aos-easing="linear" class="img-box aos-init aos-animate"
+                            id="iqvzm">
+                            <img data-gjs-type="image" data-max-width="800" data-editable="true"
+                                src="https://image.namtay.vn/fit/800/images/wedsite/9xrf4E4H0K_tmp.png" alt=""
+                                data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear"
+                                class="block aos-init aos-animate" id="ihn29" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-gjs-type="widget" data-highlightable="1" data-widget="album" class="t21-album bg-texture"
+            id="i5egl">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up" data-aos-duration="900"
+                data-aos-easing="linear" data-editable="true"
+                class="title font-heading text-center aos-init aos-animate" id="ij67n">
+                <p>Album</p>
+            </div>
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-easing="linear" class="album-wapper aos-init aos-animate" id="ifiw3">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="grid grid-cols-12" id="ieprg">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" class="album-item1 col-span-4"
+                        id="ixx0l">
+                        <img data-gjs-type="image"
+                            src="https://image.namtay.vn/fit/600/images/wedsite/Ei6EYZnx4y_tmp.png" alt=""
+                            data-editable="true" data-max-width="600" class="image-fit" id="iarjq" />
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" class="album-item2 col-span-4"
+                        id="iaks3">
+                        <img data-gjs-type="image"
+                            src="https://image.namtay.vn/fit/600/images/wedsite/7vTPoYZsT1_tmp.png" alt=""
+                            data-editable="true" data-max-width="600" class="image-fit" id="iyv1m" />
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" class="album-item3 col-span-4"
+                        id="ir4u4">
+                        <img data-gjs-type="image"
+                            src="https://image.namtay.vn/fit/600/images/wedsite/2QSlyrTJGe_tmp.png" alt=""
+                            data-editable="true" data-max-width="600" class="image-fit" id="i3bp3" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-gjs-type="widget" data-highlightable="1" data-widget="story" class="t21-story bg-texture"
+            id="iko4m">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                data-aos-duration="1400" data-aos-easing="linear"
+                class="story-wrapper grid grid-cols-12 aos-init aos-animate" id="itsh3">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item1 col-span-4"
+                    id="ijgi4">
+                    <img data-gjs-type="image" src="https://image.namtay.vn/fit/800/images/wedsite/Dbict5UWbr_tmp.png"
+                        alt="" data-max-width="800" data-editable="true" class="image-fit" id="ijhba" />
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item2 col-span-4"
+                    id="i2c09">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="title font-para" id="iqe8h"></div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="disc font-para" id="i80of">
+                        <p>
+                            Đừng chọn người đẹp nhất, hãy chọn người tôn trọng bạn nhất.
+                        </p>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item3 col-span-4"
+                    id="ibavy">
+                    <img data-gjs-type="image" src="https://image.namtay.vn/fit/800/images/wedsite/QHEN9EQbWA_tmp.png"
+                        alt="" data-max-width="800" data-editable="true" class="image-fit" id="ifhxg" />
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item4 col-span-4"
+                    id="ioutk"></div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item5 col-span-4"
+                    id="i7iby">
+                    <img data-gjs-type="image" src="https://image.namtay.vn/fit/800/images/wedsite/A0lOfglWmC_tmp.png"
+                        alt="" data-max-width="800" data-editable="true" class="image-fit" id="idt8k" />
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item6 col-span-4"
+                    id="iwou8">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="title font-para" id="i05m9"></div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="disc font-para" id="iqqph">
+                        <p>
+                            Người ta hỏi em như thế nào là hạnh phúc, em kể về những ngày tháng có anh.
+                        </p>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item7 col-span-4"
+                    id="iqeyb">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="title font-para" id="iires"></div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                        class="disc font-para" id="ia598">
+                        <p>
+                            Từ từ là một lời nói tốt, từ từ gặp, từ từ trưởng thành, từ từ thích, từ từ cùng nhau ngắm nhìn thế giới, từ từ già đi.
+                        </p>
+                    </div>
+                </div>
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="story-item8 col-span-4"
+                    id="iug1z">
+                    <!-- end img -->
+                    <img data-gjs-type="image" src="https://image.namtay.vn/fit/800/images/wedsite/j8QjasjPBP_tmp.png"
+                        alt="" data-max-width="800" data-editable="true" class="image-fit" id="i5ivf" />
+                </div>
+            </div>
+        </section>
+        <section data-gjs-type="text" draggable="true" data-highlightable="1" class="t21-rsvp grid place-center"
+            id="icmrp">
+            <div data-gjs-type="text" draggable="true" data-highlightable="1" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-easing="linear" class="footer-wrapper aos-init aos-animate"
+                id="iipds">
+                <div data-gjs-type="text" draggable="true" data-highlightable="1" class="flex mx-auto rsvp-wrapper"
+                    id="iu3g7">
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1"
+                        class="t21-rsvp-content asking-txt parent-fr flex flex-col" id="imtlf">
+                        <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                            class="question color-1 font-para" id="iuqql">
+                            <p>Lời cảm ơn</p>
+                        </div>
+                        <div data-gjs-type="text" draggable="true" data-highlightable="1" data-editable="true"
+                            class="explain color-1 font-para inner-col text-center cke_editable cke_editable_inline cke_contents_ltr"
+                            id="ioitd" contenteditable="false" spellcheck="false">
+                            <p>
+                                Chúng mình đã chờ đợi ngày này từ rất lâu. Đám cưới của chúng mình sẽ trở nên trọn vẹn hơn với sự hiện diện của bạn. Chúng mình rất biết ơn nếu bạn có thể dành thời gian và mong được gặp bạn. Cảm ơn bạn rất nhiều!
+                            </p>
+                        </div>
+                        <form data-gjs-type="text" draggable="true" data-highlightable="1" action="" method="post"
+                            class="form inner-col" id="i8puj">
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" class="form-control grid"
+                                id="ig4d9">
+                                <span data-gjs-type="label" data-highlightable="1" for="name"
+                                    class="form-label font-para color-1" id="iifh7">Tên của bạn</span><input
+                                    data-gjs-type="text" draggable="true" data-highlightable="1" type="text" id="name"
+                                    required="true" class="font-para color-1" />
+                            </div>
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" class="form-control grid"
+                                id="ien5c2">
+                                <span data-gjs-type="label" data-highlightable="1" for="tel"
+                                    class="form-label font-para color-1" id="i0mkd5">Bạn có lời gì muốn gửi đến
+                                    tụi mình không?</span><input data-gjs-type="text" draggable="true"
+                                    data-highlightable="1" type="text" id="loichuc" required="true"
+                                    class="font-para color-1" />
+                            </div>
+
+                            <div data-gjs-type="text" draggable="true" data-highlightable="1" id="i1ddnv">
+                                <button data-gjs-type="text" draggable="true" data-highlightable="1"
+                                    class="form-submit font-para" 
+                                    onclick="event.preventDefault(); 
+                                    var name = document.getElementById('name').value;
+                                    var loichuc = document.getElementById('loichuc').value;
+                                    if(name !== '' && loichuc !== '') { 
+                                        location.href='./qr.jpeg'; 
+                                    }else if(name === ''){
+                                        var alertBox = document.getElementById('alert-name');
+                                        alertBox.style.display = 'block';
+                                        setTimeout(function() {
+                                            alertBox.style.display = 'none';
+                                        }, 1500);
+                                    } 
+                                    else if(loichuc === '') {
+                                        var alertBox = document.getElementById('alert-loichuc');
+                                        alertBox.style.display = 'block';
+                                        setTimeout(function() {
+                                            alertBox.style.display = 'none';
+                                        }, 1500);
+                                    }">
+                                    GỬI LỜI CHÚC
+                                </button>
+                            </div>
+                            <!-- alert -->
+                            <div id="alert-name" class="custom-alert">
+                                <h2>Thư hiện lên và nói</h2>
+                                <p class="font-para">Bạn tên gì zọ?!</p>
+                            </div>
+                            <div id="alert-loichuc" class="custom-alert">
+                                <h2>Thư hiện lên và nói</h2>
+                                <p class="font-para">Bạn có lời gì gửi đến tụi mình hong?!</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div data-gjs-type="text" draggable="true" data-highlightable="1" class="form-wr" id="i3jcv">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="gjs-css-rules">
+            <div id="gjs-css-rules">
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                </style>
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signature";
+                        --font-2: "Fahkwang", sans-serif;
+                        --color-1: #fff;
+                        --color-2: #000;
+                    }
+                </style>
+                <style>
+                    * {
+                        padding: 0;
+                        margin: 0;
+                    }
+                </style>
+                <style>
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                </style>
+                <style>
+                    .font-para {
+                        font-family: var(--font-2);
+                    }
+                </style>
+                <style>
+                    .font-heading {
+                        font-family: var(--font-1);
+                    }
+                </style>
+                <style>
+                    .font-heading p,
+                    .font-para p {
+                        white-space: pre-line;
+                        overflow-wrap: anywhere;
+                    }
+                </style>
+                <style>
+                    .font-inherit {
+                        font-family: inherit;
+                    }
+                </style>
+                <style>
+                    .color-1 {
+                        color: var(--color-1);
+                    }
+                </style>
+                <style>
+                    .color-2 {
+                        color: var(--color-2);
+                    }
+                </style>
+                <style>
+                    .container {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        padding: 0 !important;
+                    }
+                </style>
+                <style>
+                    .inner-col {
+                        max-width: 980px;
+                        position: relative;
+                    }
+                </style>
+                <style>
+                    .flex {
+                        display: flex;
+                    }
+                </style>
+                <style>
+                    .grid {
+                        display: grid;
+                    }
+                </style>
+                <style>
+                    .block {
+                        display: block;
+                    }
+                </style>
+                <style>
+                    .justify-between {
+                        justify-content: space-between;
+                    }
+                </style>
+                <style>
+                    .justify-center {
+                        justify-content: center;
+                    }
+                </style>
+                <style>
+                    .items-center {
+                        align-items: center;
+                    }
+                </style>
+                <style>
+                    .items-baseline {
+                        align-items: baseline;
+                    }
+                </style>
+                <style>
+                    .place-center {
+                        place-content: center;
+                    }
+                </style>
+                <style>
+                    .text-center {
+                        text-align: center;
+                    }
+                </style>
+                <style>
+                    .w-full {
+                        width: 100%;
+                    }
+                </style>
+                <style>
+                    .h-full {
+                        height: 100%;
+                    }
+                </style>
+                <style>
+                    .relative {
+                        position: relative;
+                    }
+                </style>
+                <style>
+                    .absolute {
+                        position: absolute;
+                    }
+                </style>
+                <style>
+                    .min-h-screen {
+                        min-height: 100vh;
+                    }
+                </style>
+                <style>
+                    .min-w-screen {
+                        min-width: 100vw;
+                    }
+                </style>
+                <style>
+                    .flex-col {
+                        flex-direction: column;
+                    }
+                </style>
+                <style>
+                    .bg-texture {
+                        background-color: #fff;
+                        background-image: url("https://static.namtay.vn/assets/img/theme16/paper-texture.png");
+                        background-blend-mode: multiply;
+                        background-repeat: repeat;
+                    }
+                </style>
+                <style>
+                    .mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                </style>
+                <style>
+                    .text-right {
+                        text-align: right;
+                    }
+                </style>
+                <style>
+                    .text-left {
+                        text-align: left;
+                    }
+                </style>
+                <style>
+                    .line-height-normal {
+                        line-height: 1.5;
+                    }
+                </style>
+                <style>
+                    .grid-cols-12 {
+                        grid-template-columns: repeat(12, minmax(0, 1fr));
+                    }
+                </style>
+                <style>
+                    .grid-cols-10 {
+                        grid-template-columns: repeat(10, minmax(0, 1fr));
+                    }
+                </style>
+                <style>
+                    .col-span-6 {
+                        grid-column: span 6 / span 6;
+                    }
+                </style>
+                <style>
+                    .col-span-3 {
+                        grid-column: span 3 / span 3;
+                    }
+                </style>
+                <style>
+                    .col-span-4 {
+                        grid-column: span 4 / span 4;
+                    }
+                </style>
+                <style>
+                    .col-span-5 {
+                        grid-column: span 5 / span 5;
+                    }
+                </style>
+                <style>
+                    .col-span-12 {
+                        grid-column: span 12 / span 12;
+                    }
+                </style>
+                <style>
+                    .col-start-6 {
+                        grid-column-start: 6;
+                    }
+                </style>
+                <style>
+                    .col-start-8 {
+                        grid-column-start: 8;
+                    }
+                </style>
+                <style>
+                    .col-start-7 {
+                        grid-column-start: 7;
+                    }
+                </style>
+                <style>
+                    .col-start-1 {
+                        grid-column-start: 1;
+                    }
+                </style>
+                <style>
+                    .col-start-2 {
+                        grid-column-start: 2;
+                    }
+                </style>
+                <style>
+                    .col-end-6 {
+                        grid-column-end: 6;
+                    }
+                </style>
+                <style>
+                    .col-end-7 {
+                        grid-column-end: 7;
+                    }
+                </style>
+                <style>
+                    .max-w-full {
+                        max-width: 100%;
+                    }
+                </style>
+                <style>
+                    .image-fit {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                </style>
+                <style>
+                    .wrapper-donate {
+                        position: fixed;
+                        right: 50px;
+                        bottom: 140px;
+                        z-index: 99;
+                    }
+                </style>
+                <style>
+                    .wrapper-icon {
+                        position: relative;
+                    }
+                </style>
+                <style>
+                    #nt-sticky-inner {
+                        top: 26px !important;
+                        right: 22px !important;
+                        width: unset !important;
+                        height: unset !important;
+                    }
+                </style>
+                <style>
+                    #nt-sticky-outer {
+                        width: 95px !important;
+                    }
+                </style>
+                <style>
+                    #nt-sticky-inner>img {
+                        width: 45px !important;
+                    }
+                </style>
+                <style>
+                    .t21-banner {
+                        background-image: url("https://static.namtay.vn/assets/img/theme21/banner.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                </style>
+                <style>
+                    .t21-scroll-down a {
+                        text-decoration: none;
+                    }
+                </style>
+                <style>
+                    .t21-scroll-down {
+                        margin-bottom: 85px;
+                    }
+                </style>
+                <style>
+                    .t21-banner .greeting {
+                        font-weight: 400;
+                        font-size: 24px;
+                        letter-spacing: 25px;
+                        margin-top: 100px;
+                    }
+                </style>
+                <style>
+                    .t21-banner .heading {
+                        font-weight: 400;
+                        font-size: 64px;
+                        width: 765px;
+                        margin: 138px 0 140px 0;
+                    }
+                </style>
+                <style>
+                    .t21-introduce {
+                        padding: 50px 140px 80px 140px;
+                    }
+                </style>
+                <style>
+                    .t21-introduce .name {
+                        font-weight: 400;
+                        font-size: 64px;
+                        line-height: 237px;
+                    }
+                </style>
+                <style>
+                    .t21-introduce .ampersand {
+                        font-weight: 300;
+                        font-size: 73.5632px;
+                    }
+                </style>
+                <style>
+                    .t21-introduce .day {
+                        font-weight: 300;
+                        font-size: 20px;
+                        margin: 50px 0 40px 0;
+                    }
+                </style>
+                <style>
+                    .t21-introduce .disc {
+                        font-weight: 300;
+                        font-size: 20px;
+                        max-width: 790px;
+                        letter-spacing: -0.02em;
+                        padding: 62px 0;
+                    }
+                </style>
+                <style>
+                    .t21-introduce .disc::after {
+                        content: "";
+                        position: absolute;
+                        width: 180px;
+                        height: 1px;
+                        background: #000;
+                        bottom: 0;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                </style>
+                <style>
+                    .t21-introduce .disc::before {
+                        content: "";
+                        position: absolute;
+                        width: 180px;
+                        height: 1px;
+                        background: #000;
+                        top: 0;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                </style>
+                <style>
+                    .t21-location {
+                        background-image: url("https://static.namtay.vn/assets/img/theme21/event.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        padding: 120px 140px;
+                    }
+                </style>
+                <style>
+                    .location-time {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        /* border-right: 1px solid #fff; */
+                    }
+                </style>
+                <style>
+                    .location-address {
+                        flex: 1;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 200px 0 175px;
+                    }
+                </style>
+                <style>
+                    .t21-location .hours {
+                        font-weight: 300;
+                        font-size: 24px;
+                    }
+                </style>
+                <style>
+                    .t21-location .month,
+                    .t21-location .address {
+                        font-weight: 300;
+                        font-size: 64px;
+                        margin: 20px 0;
+                    }
+                </style>
+                <style>
+                    .t21-location .address {
+                        width: 366px;
+                        margin: 20px auto;
+                    }
+                </style>
+                <style>
+                    .t21-events {
+                        padding-bottom: 100px;
+                    }
+                </style>
+                <style>
+                    .t21-events .title {
+                        font-weight: 400;
+                        font-size: 70px;
+                        margin-bottom: 60px;
+                        padding: 0 40px;
+                    }
+                </style>
+                <style>
+                    .events-wrapper {
+                        grid-template-columns: repeat(3, 1fr);
+                        width: calc(100vw - 282px);
+                    }
+                </style>
+                <style>
+                    .events-wrapper::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        background-color: #969696;
+                        width: 100%;
+                        z-index: 0;
+                    }
+                </style>
+                <style>
+                    .event-point {
+                        position: relative;
+                        justify-content: center;
+                    }
+                </style>
+                <style>
+                    .event-point::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        border: 2px solid var(--color-2);
+                        background-color: var(--color-1);
+                        background-image: url("https://static.namtay.vn/assets/img/theme16/paper-texture.png");
+                        background-blend-mode: multiply;
+                        background-repeat: repeat;
+                        z-index: 2;
+                        border-radius: 50%;
+                    }
+                </style>
+                <style>
+                    .t21-events .hours-box {
+                        font-weight: 400;
+                        font-size: 28px;
+                    }
+                </style>
+                <style>
+                    .t21-events .content-box {
+                        font-weight: 400;
+                        font-size: 36px;
+                        margin-top: 65px;
+                    }
+                </style>
+                <style>
+                    .t21-events .disc {
+                        font-weight: 300;
+                        font-size: 20px;
+                        max-width: 790px;
+                        letter-spacing: -0.02em;
+                        padding: 62px 0;
+                        margin: 80px auto 0;
+                        text-align: center;
+                    }
+                </style>
+                <style>
+                    .t21-events .disc::after {
+                        content: "";
+                        position: absolute;
+                        width: 180px;
+                        height: 1px;
+                        background: #000;
+                        bottom: 0;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                </style>
+                <style>
+                    .t21-events .disc::before {
+                        content: "";
+                        position: absolute;
+                        width: 180px;
+                        height: 1px;
+                        background: #000;
+                        top: 0;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                </style>
+                <style>
+                    .t21-bio {
+                        overflow: hidden;
+                    }
+                </style>
+                <style>
+                    .bio-container {
+                        max-width: 1440px;
+                        margin: 0 auto;
+                        padding-top: 140px;
+                    }
+                </style>
+                <style>
+                    .bio-container .decor {
+                        margin-bottom: 40px;
+                    }
+                </style>
+                <style>
+                    .t21-bio .upper-part .main-content {
+                        padding: 0 140px;
+                        column-gap: 7rem;
+                    }
+                </style>
+                <style>
+                    .t21-bio .upper-part .content-box,
+                    .t21-bio .lower-part .content-box {
+                        text-align: left;
+                        max-width: 60%;
+                        width: 100%;
+                    }
+                </style>
+                <style>
+                    .t21-bio .upper-part .img-box {
+                        max-width: 40%;
+                        width: 100%;
+                    }
+                </style>
+                <style>
+                    .t21-bio .lower-part .main-content {
+                        padding: 80px 140px;
+                        column-gap: 7rem;
+                    }
+                </style>
+                <style>
+                    .t21-bio .lower-part .img-box {
+                        max-width: 40%;
+                        width: 100%;
+                    }
+                </style>
+                <style>
+                    .t21-bio .main-content .img-box img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                </style>
+                <style>
+                    .bio-title {
+                        font-weight: 400;
+                        font-size: 24px;
+                        letter-spacing: 25px;
+                    }
+                </style>
+                <style>
+                    .bio-name {
+                        font-weight: 400;
+                        font-size: 48px;
+                        padding: 12px 0 24px;
+                    }
+                </style>
+                <style>
+                    .bio-content {
+                        font-weight: 400;
+                        font-size: 20px;
+                        padding-bottom: 72px;
+                        border-bottom: 1px solid #969696;
+                    }
+                </style>
+                <style>
+                    .t21-journey .title {
+                        font-weight: 400;
+                        font-size: 70px;
+                        margin-bottom: 105px;
+                    }
+                </style>
+                <style>
+                    .journey-list {
+                        padding: 0 140px;
+                        max-width: 1440px;
+                    }
+                </style>
+                <style>
+                    .journey-item {
+                        position: relative;
+                        display: grid;
+                        grid-template-columns: repeat(12, 1fr);
+                        font-size: 24px;
+                        color: #333;
+                        padding-bottom: 100px;
+                        overflow-wrap: anywhere;
+                    }
+                </style>
+                <style>
+                    .journey-item .content {
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                    }
+                </style>
+                <style>
+                    .journey-item:nth-child(2n) .content {
+                        grid-column: 8/13;
+                        margin-left: 50px;
+                    }
+                </style>
+                <style>
+                    .journey-item:nth-child(2n-1) .content {
+                        margin-right: 50px;
+                        text-align: right;
+                        grid-column: 1/6;
+                    }
+                </style>
+                <style>
+                    .journey-item:first-child .content {
+                        margin-top: 50px;
+                    }
+                </style>
+                <style>
+                    .journey-item .content::before {
+                        content: "";
+                        position: absolute;
+                        top: 0px;
+                        bottom: 0px;
+                        left: calc(50%);
+                        transform: translateX(-50%);
+                        width: 2px;
+                        background-color: var(--color-2);
+                    }
+                </style>
+                <style>
+                    .journey-item .content::after {
+                        content: "";
+                        position: absolute;
+                        top: 0px;
+                        left: calc(50%);
+                        transform: translateX(-50%);
+                        width: 28px;
+                        height: 28px;
+                        background-color: var(--color-1);
+                        border-radius: 50%;
+                        border: 1px solid var(--color-2);
+                    }
+                </style>
+                <style>
+                    .journey-list .journey-item:last-child::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        left: calc(50%);
+                        transform: translateX(-50%);
+                        width: 28px;
+                        height: 28px;
+                        background-color: var(--color-1);
+                        border-radius: 50%;
+                        border: 1px solid var(--color-2);
+                    }
+                </style>
+                <style>
+                    .day-journey {
+                        font-weight: 300;
+                        font-size: 54px;
+                        width: 100%;
+                    }
+                </style>
+                <style>
+                    .journey-item:nth-child(2n) .content .day-journey {
+                        text-align: right;
+                    }
+                </style>
+                <style>
+                    .name-journey {
+                        font-weight: 400;
+                        font-size: 50.0328px;
+                        line-height: 185px;
+                        position: relative;
+                        top: -60px;
+                    }
+                </style>
+                <style>
+                    .disc-journey {
+                        font-weight: 300;
+                        font-size: 24px;
+                        position: relative;
+                        top: -60px;
+                    }
+                </style>
+                <style>
+                    .album-wapper {
+                        padding: 56px 140px;
+                        background-color: #3d3d3d;
+                    }
+                </style>
+                <style>
+                    .album-wapper>div {
+                        margin: 0 auto;
+                        column-gap: 16px;
+                        max-width: 1440px;
+                        grid-template-rows: repeat(1, minmax(0, 276px));
+                    }
+                </style>
+                <style>
+                    .t21-album .title {
+                        font-weight: 400;
+                        font-size: 80px;
+                    }
+                </style>
+                <style>
+                    .story-wrapper {
+                        margin: 0 auto;
+                        column-gap: 16px;
+                        row-gap: 30px;
+                        max-width: 1440px;
+                        padding: 50px 140px 200px;
+                        grid-template-rows: 369px 117px 369px;
+                    }
+                </style>
+                <style>
+                    .story-item1 {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                    }
+                </style>
+                <style>
+                    .story-item2 {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 5;
+                        grid-column-end: 9;
+                        margin-top: 3rem;
+                    }
+                </style>
+                <style>
+                    .story-item3 {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 9;
+                        grid-column-end: 13;
+                    }
+                </style>
+                <style>
+                    .story-item5 {
+                        grid-row-start: 2;
+                        grid-row-end: 4;
+                        grid-column-start: 5;
+                        grid-column-end: 9;
+                    }
+                </style>
+                <style>
+                    .story-item6 {
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        grid-column-start: 9;
+                        grid-column-end: 13;
+                    }
+                </style>
+                <style>
+                    .story-item7 {
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                    }
+                </style>
+                <style>
+                    .story-item8 {
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        grid-column-start: 9;
+                        grid-column-end: 13;
+                    }
+                </style>
+                <style>
+                    .story-wrapper .title {
+                        font-weight: 600;
+                        font-size: 38px;
+                        margin-bottom: 16px;
+                    }
+                </style>
+                <style>
+                    .story-wrapper .disc {
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                </style>
+                <style>
+                    .t21-rsvp {
+                        padding: 155px 140px 115px;
+                        background-image: url("./end.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                </style>
+                <style>
+                    .footer-wrapper {
+                        max-width: 1440px;
+                    }
+                </style>
+                <style>
+                    .t21-rsvp-content {
+                        flex: 1;
+                        margin-right: 115px;
+                    }
+                </style>
+                <style>
+                    .form-wr {
+                        flex: 1;
+                    }
+                </style>
+                <style>
+                    .question {
+                        font-size: 28px;
+                    }
+                </style>
+                <style>
+                    .explain {
+                        font-weight: 200;
+                        font-size: 20px;
+                        margin-top: 1.5rem;
+                        text-align: justify;
+                        margin-bottom: 40px;
+                    }
+                </style>
+                <style>
+                    .form {
+                        margin: 2rem 0;
+                    }
+                </style>
+                <style>
+                    .form-control {
+                        margin-bottom: 45px;
+                    }
+                </style>
+                <style>
+                    .form-label {
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                </style>
+                <style>
+                    .form input[type="text"],
+                    .form input[type="tel"] {
+                        display: block;
+                        width: 100%;
+                        border: none;
+                        background-color: transparent;
+                        border-bottom: 1px solid var(--color-1);
+                        min-height: 50px;
+                        font-size: 1rem;
+                    }
+                </style>
+                <style>
+                    .form input:focus {
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        outline: none;
+                    }
+                </style>
+                <style>
+                    .form input[type="radio"] {
+                        background-color: transparent;
+                        border: 1px solid var(--color-2);
+                        position: relative;
+                        width: 0;
+                    }
+                </style>
+                <style>
+                    input[type="radio"]:after {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 40px;
+                        top: -15px;
+                        left: -50px;
+                        position: relative;
+                        background-color: transparent;
+                        content: "";
+                        display: inline-block;
+                        visibility: visible;
+                        border: 1px solid var(--color-1);
+                    }
+                </style>
+                <style>
+                    input[type="radio"]:checked:before {
+                        content: url("https://static.namtay.vn/assets/img/theme14/check-mark.png");
+                        width: 30px;
+                        height: 30px;
+                        top: -26px;
+                        left: -50px;
+                        position: absolute;
+                        display: block;
+                        color: var(--color-1);
+                    }
+                </style>
+                <style>
+                    .form-question {
+                        margin-top: 3.5rem;
+                        margin-bottom: 4rem;
+                    }
+                </style>
+                <style>
+                    .form-question .btn-wrap {
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                </style>
+                <style>
+                    .btn-box {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 0.5rem;
+                        align-items: center;
+                    }
+                </style>
+                <style>
+                    .btn-box:first-child {
+                        margin-left: 8%;
+                    }
+                </style>
+                <style>
+                    .form-btn-text {
+                        margin-top: 0;
+                        font-weight: 200;
+                        font-size: 20px;
+                    }
+                </style>
+                <style>
+                    .form-submit {
+                        padding: 24px 42px;
+                        font-size: 20px;
+                        margin-inline: auto;
+                        background: transparent;
+                        border: 1px solid var(--color-1);
+                        border-radius: 50px;
+                        color: var(--color-1);
+                    }
+                </style>
+                <style>
+                    .t21-footer-content p {
+                        margin-right: 1rem;
+                    }
+                </style>
+                <style>
+                    .t21-animate-bounce {
+                        animation: bounce 1s infinite;
+                        margin-bottom: -8px;
+                        padding-top: 10px;
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signaturet";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-2: "Fahkwang";
+                    }
+                </style>
+                <style>
+                    #i9bj68 {
+                        text-align: left;
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signaturet";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-2: "Fahkwang";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signaturet";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-2: "Fahkwang";
+                    }
+                </style>
+                <style>
+                    #iexc {
+                        background-image: url("https://image.namtay.vn/fit/2000/images/wedsite/q9BSZAdkHG_tmp.png");
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "EB Garamond";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Svn-Wallows";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Vnf-Bodoni";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Svn-Aaron";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Mtd-BrandPro";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Meow Script";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Svn-Sticky Toffee";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Roboto";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Open Sans";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Montserrat";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Licorice";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Raleway";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Playfair Display";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Svn-Poppins";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Waterfall";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Dancing Script";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Corinthia";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "DalatSans";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "TuyetSac";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Great Vibes";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Noto Sans Korean";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Ms Madi";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Send Flowers";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Allura";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Biancha";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signaturet";
+                    }
+                </style>
+                <style>
+                    #ia3lh {
+                        background-image: url("https://image.namtay.vn/fit/2000/images/wedsite/9UwMDA9aVK_tmp.png");
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "iCiel Monterey Script";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signaturet";
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-1: "Housttely Signaturet";
+                    }
+                </style>
+                <style>
+                    @font-face {
+                        font-family: "Housttely Signature";
+                        src: url('./fonts/SVN-Housttely Signature.otf') format('opentype');
+                        font-weight: 400;
+                        font-style: normal;
+                        font-display: swap;
+                    }
+                </style>
+                <style>
+                    @keyframes bounce {
+
+                        0%,
+                        100% {
+                            transform: translateY(-25%);
+                            animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+                        }
+
+                        50% {
+                            transform: translateY(0);
+                            animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 1194px) {
+                        .t21-bio .lower-part .main-content {
+                            padding: 60px 98px;
+                            column-gap: 4rem;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 1194px) {
+                        .t21-bio .upper-part .main-content {
+                            padding: 0 98px;
+                            column-gap: 4rem;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 1194px) {
+                        .bio-title {
+                            font-size: 22px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 1194px) {
+                        .bio-name {
+                            font-size: 38px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 1194px) {
+                        .bio-content {
+                            font-size: 18px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-banner .greeting {
+                            font-size: 12px;
+                            letter-spacing: 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-banner .heading {
+                            font-size: 32px;
+                            width: 244px;
+                            margin: 135px auto 147px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-scroll-down {
+                            margin-bottom: 85px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-introduce {
+                            padding: 56px 20px 84px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-introduce .name {
+                            font-size: 36px;
+                            line-height: 133.31px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-introduce .ampersand {
+                            font-size: 36px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-introduce .day {
+                            font-size: 16px;
+                            margin: 32px 0 56px 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-introduce .disc {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-location {
+                            padding: 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-location>div {
+                            flex-direction: column;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .location-time {
+                            padding: 104px 0 88px 0;
+                            border-right: 0;
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-location .hours {
+                            font-size: 18.7249px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .t21-location .month,
+                        .t21-location .address {
+                            font-size: 48px;
+                            width: auto;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-location .month {
+                            font-size: 46px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .location-address {
+                            padding: 88px 0 104px 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-events .title {
+                            padding: 0 20px;
+                            font-size: 40px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .events-wrapper {
+                            grid-template-columns: unset;
+                            margin-top: 30px;
+                            width: calc(100vw - 115px);
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .events-wrapper::before {
+                            top: 0;
+                            width: 2px;
+                            height: 100%;
+                            transform: rotateZ(0deg);
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .event-point {
+                            grid-template-rows: unset;
+                            margin: 0 0 7rem 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .events-wrapper .event-point:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .event-point::before {
+                            left: 0;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-events .hours-box {
+                            text-align: left;
+                            font-size: 24px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-events .content-box {
+                            margin-top: 82px;
+                            font-size: 32px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-events .disc {
+                            font-size: 16px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-bio .upper-part .main-content {
+                            flex-direction: column;
+                            padding: 0 20px 160px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-bio .lower-part .main-content {
+                            flex-direction: column-reverse;
+                            padding: 0 20px 50px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .t21-bio .upper-part .img-box,
+                        .t21-bio .lower-part .img-box,
+                        .t21-bio .upper-part .content-box,
+                        .t21-bio .lower-part .content-box {
+                            max-width: 100%;
+                            text-align: left;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .t21-bio .upper-part .content-box,
+                        .t21-bio .lower-part .content-box {
+                            margin-top: 4rem;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .bio-title {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .bio-name {
+                            font-size: 36px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .bio-content {
+                            font-size: 16px;
+                            padding-bottom: 64px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .journey-list {
+                            padding: 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .journey-item:nth-child(2n-1) .content,
+                        .journey-item:nth-child(2n) .content {
+                            grid-column: 3/12;
+                            margin-left: 50px;
+                            text-align: left;
+                            margin: 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .journey-item:first-child .content {
+                            margin-top: 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .journey-item .content::before,
+                        .journey-item .content::after,
+                        .journey-list .journey-item:last-child::after {
+                            left: 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .journey-item .content::after {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-journey .title {
+                            font-size: 40px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .day-journey {
+                            font-size: 28px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .name-journey {
+                            font-size: 28px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .day-journey,
+                        .journey-item:nth-child(2n) .content .day-journey {
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .name-journey {
+                            line-height: 105px;
+                            top: -40px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .disc-journey {
+                            font-size: 16px;
+                            top: -43px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-album .title {
+                            font-size: 40px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .album-wapper {
+                            padding: 96px 20px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .album-wapper>div {
+                            row-gap: 16px;
+                            grid-template-rows: repeat(3, minmax(0, 256px));
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .album-item1 {
+                            grid-column: span 12 / span 12;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .album-item2 {
+                            grid-column: span 12 / span 12;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .album-item3 {
+                            grid-column: span 12 / span 12;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-wrapper {
+                            padding: 96px 20px;
+                            grid-template-rows: 343px 343px 343px 343px 479px 130px 343px 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item1 {
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item2 {
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item3 {
+                            grid-row-start: 3;
+                            grid-row-end: 4;
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item6 {
+                            grid-row-start: 4;
+                            grid-row-end: 5;
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                            margin-top: 3rem;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item5 {
+                            grid-row-start: 5;
+                            grid-row-end: 6;
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item7 {
+                            grid-row-start: 6;
+                            grid-row-end: 7;
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-item8 {
+                            grid-row-start: 7;
+                            grid-row-end: 8;
+                            grid-column-start: 1;
+                            grid-column-end: 13;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-wrapper .title {
+                            font-weight: 600;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .story-wrapper .disc {
+                            font-size: 18px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-rsvp {
+                            padding: 32px 20px 42px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .footer-wrapper .rsvp-wrapper {
+                            flex-direction: column;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-rsvp-content {
+                            margin-right: 0;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .question {
+                            font-size: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .explain {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .form label {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .form-submit {
+                            font-size: 16px;
+                            padding: 12px 36px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+
+                        .form input[type="text"],
+                        .form input[type="tel"] {
+                            min-height: 40px;
+                            font-size: 14px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        input[type="radio"]:after {
+                            width: 24px;
+                            height: 24px;
+                            top: -7px;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .form-question .btn-wrap {
+                            gap: 3rem;
+                            align-items: baseline;
+                            width: 100%;
+                            flex-direction: row;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .btn-box:first-child {
+                            margin-left: 13%;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .btn-box {
+                            margin-left: 13%;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .t21-footer-content {
+                            margin-top: 72px;
+                            justify-content: center;
+                        }
+                    }
+                </style>
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .wrapper-donate {
+                            right: 14px;
+                            bottom: 53px;
+                            transform: scale(0.7);
+                        }
+                    }
+                </style>
+                <style>
+                    :root {
+                        --font-2: "Fahkwang";
+                    }
+                </style>
+                <style></style>
+            </div>
+            <div id="gjs-css-rules-992"></div>
+            <div id="gjs-css-rules-768"></div>
+            <div id="gjs-css-rules-480"></div>
+            <div id="gjs-css-rules-385"></div>
+        </div>
+        <div class="gjs-js-cont"></div>
+        <script defer="">
+            window.__editor__ = true;
+            (window.onscroll = function () {
+              window.__editor__ ||
+                window.innerHeight + window.scrollY >=
+                  document.body.offsetHeight - 270 ||
+                (document.getElementById("call-to-donate").style.bottom = "0px");
+            }),
+              AOS.init();
+            /* window.onload = function() {
+                if (confirm('Bạn có muốn phát nhạc không?')) {
+                    var audio = document.getElementById('audio');
+                    audio.play().then(() => {
+                        alert('Nhạc đã được phát!');
+                    }).catch(error => {
+                        alert('Người dùng đã chặn phát nhạc tự động.');
+                    });
+                } else {
+                    alert('Bạn đã từ chối phát nhạc.');
+                }
+            }; */
+        </script>
+
+</body>
+
+</html>
